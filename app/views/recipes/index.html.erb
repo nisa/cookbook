@@ -1,0 +1,15 @@
+<div>
+   <h4> RECIPES </h4>
+   <p> A list of easy peasy recipes </p>
+   <ul>
+   	<% @recipes.each do |recipe| %>
+   	  <li> 
+   	  	<h3><%= recipe.name %></h3>
+   	  	<h5> Ingredients </h5>
+   	  	<p><%= recipe.ingredients %></p>
+   	  	<h5> Procedure </h5>
+   	  	<p><%= recipe.procedure%> </p>
+   	  </li>
+   	<% end %>
+   </ul>
+</div>
